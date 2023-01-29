@@ -1,0 +1,11 @@
+.social-icon {
+    color: white;
+    margin: 1rem;
+    transition: all 0.2s ease-in-out;
+    font-size: 20px;
+    
+  }
+
+.social-icon:hover {
+opacity: 0.5;
+}

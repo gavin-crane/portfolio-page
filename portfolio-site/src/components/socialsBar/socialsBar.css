@@ -1,0 +1,11 @@
+.socials { 
+    position: absolute;
+    bottom: 0px;
+    width: 224px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: 50px; 
+    background-color:  rgb(56, 57, 70);
+    border-radius: 0.3125rem;
+}
