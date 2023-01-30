@@ -5,14 +5,14 @@ import SocialsBar from '../socialsBar/socialsBar';
 
 function Overview() {
   return (
-    <div className = "overview">
+    <span className = "overview">
       <div className = "insideOverview">
         <div className = "content">
             Contents of the side bar
         </div>
-        <SocialsBar className = "socials"/>
+        <SocialsBar />
       </div>
-    </div>
+    </span>
   );
 }
 export default Overview;
