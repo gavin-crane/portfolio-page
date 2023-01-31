@@ -41,8 +41,8 @@
     position: absolute;
     top: -80%;
     left: 70%;
-    width: 4px;
-    height: 4px;
+    width: 8px;
+    height: 8px;
     background:#fff;
     border-radius: 100%;
     box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1),
@@ -130,15 +130,15 @@
 .titleContainer > h1 {
     margin-bottom: 0;
     font-size: 56px;
-    font-family: "Motiva Sans", Sans-serif;
+    font-family: 'Quicksand', sans-serif;
     color: rgba(255, 255, 255, 1);
-    font-weight: bold;
+    font-weight: 300;
 
 }
 .titleContainer > h2 {
     margin-top: 0;
-    font-family: "Motiva Sans", Sans-serif;
+    font-family: 'Quicksand', sans-serif;
     color: rgba(255, 255, 255, 1);
-    font-weight: bold;
+    font-weight: 300;
     float: left
 }

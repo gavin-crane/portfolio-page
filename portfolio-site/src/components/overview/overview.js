@@ -2,14 +2,16 @@
 import React from 'react';
 import './overview.css';
 import SocialsBar from '../socialsBar/socialsBar';
-
+import Social from '../social/social';
+import ProfilePicture from '../profilePicture/profilePicture';
 function Overview() {
   return (
     <span className = "overview">
       <div className = "insideOverview">
         <div className = "content">
-            Contents of the side bar
+        <ProfilePicture/>
         </div>
+       
         <SocialsBar />
       </div>
     </span>

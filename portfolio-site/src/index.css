@@ -1,5 +1,10 @@
+@font-face {
+  font-family: "Comic Sans MS";
+  src: url("https://example.com/fonts/comic-sans.ttf");
+}
+
+
 body {
   background-color: rgb(32, 33, 42);
   margin: 0;
-
 }
