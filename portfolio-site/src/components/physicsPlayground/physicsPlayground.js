@@ -65,27 +65,27 @@ export const PhysicsPlayground = () => {
     const floor = Bodies.rectangle(0, 0, 2000, 1, {
       isStatic: true,
       render: {
-        fillStyle: 'blue',
+        visible: false
       }
     });
 
     const ceiling = Bodies.rectangle(0, 200, 2000, 1, {
         isStatic: true,
         render: {
-          fillStyle: 'blue',
+          visible: false
         }
       });
     const leftWall = Bodies.rectangle(0, 0, 1, 400, {
         isStatic: true,
         render: {
-          fillStyle: 'blue',
+          visible: false
         }
       });
 
     const rightWall = Bodies.rectangle(2000, 0, 1, 400, {
         isStatic: true,
         render: {
-          fillStyle: 'blue',
+          visible: false
         }
       });
 
