@@ -6,13 +6,10 @@ import "./physicsPlayground.css";
 const title = "Welcome to my Portfolio";
 const subTitle ="Check out my projects and skills";
 
-const leftMargin = 50;
-const startX = 25;
-const startXSub = 19;
-const startY = 120;
-const widthFactor = 1
 
-const bodyToSpriteRatio = .5;
+const startXSub = 14; // the distane between characters
+const startY = 120; // y coorinate to render letters
+
 
 function createImage($string, size) {
 
@@ -30,7 +27,7 @@ function createImage($string, size) {
     ctx.closePath();
     ctx.fill();
     ctx.fillStyle = "#fff";
-    ctx.font = size + "pt Quicksand";
+    ctx.font = size + "pt Courier New";
     console.log(ctx.font);
     ctx.textAlign = "center";
     ctx.fillText($string, 75, 85);
@@ -95,32 +92,36 @@ export const PhysicsPlayground = () => {
     let cursor = Bodies.circle(0, 0, 4, {
         restitution: .0,
         render: {
-            fillstyle: 'white',
+            fillStyle: 'transparent',
+            visible: false,
+            lineWidth: 0,
+  
         }})
 
+    const sleep = ms => new Promise(r => setTimeout(r, 19));
     
-    let balls = [];
+    let balls = []; // the balls are just letters
     for (let i = 0; i < title.length; i++) {
-        let j = i+1; 
-        balls.push(
-            Bodies.circle(startX * j, startY, 8, {
-                restitution: 0.9,
-                render: {
-                  fillStyle: 'yellow',
-                  sprite: {
-                      texture: createImage(title[i], 28),
-                      xScale:.9,
-                      yScale:.9
-                  }
-                }
-            })
-        );
+        let j = i+1;
+            balls.push(
+                Bodies.circle((startXSub * j)+210, startY, 15, {
+                    restitution: 0.9,
+                    render: {
+                    fillStyle: 'yellow',
+                    sprite: {
+                        texture: createImage(title[i], 40),
+                        xScale:1,
+                        yScale:1
+                    }
+                    }
+                })
+            )
+        
     }
-    let balls2 = [];
     for (let i = 0; i < subTitle.length; i++) {
         let j = i+1; 
         balls.push(
-            Bodies.circle(startXSub * j, startY+40, 10, {
+            Bodies.circle(((startXSub-5) * j)+ 122, startY+40, 8, {
                 restitution: 0.9,
                 render: {
                   fillStyle: 'yellow',
@@ -145,13 +146,17 @@ export const PhysicsPlayground = () => {
         pointA: mouse.position,
         bodyB: cursor,
         length: 0,
-        stiffness: 1
+        stiffness: 1,
+        render: {
+          visible: false
+
+        }
     });
     World.add(engine.world, [mouseConstraint, cursor]);
 
     Engine.run(engine);
     Render.run(render);
-  }, []);
+  },[]);
 
   return (
     <div className = "physics"
