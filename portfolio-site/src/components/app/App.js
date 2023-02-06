@@ -4,6 +4,7 @@ import Overview from '../../components/overview/overview'
 import ProjectCard from '../../components/projectCard/projectCard'
 import Title from '../../components/title/title';
 import PhysicsPlayground from '../../components/physicsPlayground/physicsPlayground';
+import LanguageBar from '../../components/languageBar/languageBar'
 
 function App() {
   return (

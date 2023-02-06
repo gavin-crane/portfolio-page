@@ -4,6 +4,7 @@ import './overview.css';
 import SocialsBar from '../socialsBar/socialsBar';
 import Social from '../social/social';
 import ProfilePicture from '../profilePicture/profilePicture';
+import LanguageBar from '../languageBar/languageBar'
 function Overview() {
   return (
     <span className = "overview">
@@ -11,6 +12,9 @@ function Overview() {
         <div className = "content">
         <ProfilePicture/>
         </div>
+        
+        <LanguageBar/>
+      
        
         <SocialsBar />
       </div>

@@ -1,0 +1,19 @@
+.progress-bar {
+    width: 500px;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    width: 75%;
+    height: 100%;
+    background-color: blue;
+    animation: progress-animation 2s linear;
+  }
+  
+  @keyframes progress-animation {
+    from {width: 0;}
+    to {width: 75%;}
+  }
