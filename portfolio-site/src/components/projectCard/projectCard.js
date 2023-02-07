@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import './projectCard.css';
 
+import monki from './tenor_1.gif';
+
 
 
 export default function ProjectCard() {
@@ -24,6 +26,7 @@ export default function ProjectCard() {
         <div class="card">
             <div class="card-content">
             <div class="card-image">
+                <img src={monki}/>
                 <i class="fa-duotone fa-apartment"></i>
             </div>
             <div class="card-info-wrapper">
