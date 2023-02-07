@@ -10,7 +10,7 @@ const subTitle ="Check out my projects and skills";
 const startXSub = 14; // the distane between characters
 const startY = 120; // y coorinate to render letters
 
-
+// this function takes a string letter and size and returns a png sprite
 function createImage($string, size) {
 
     let drawing = document.createElement("canvas");
@@ -35,6 +35,7 @@ function createImage($string, size) {
     return drawing.toDataURL("image/png");
 }
 
+// matter js physics sandbox and rendering 
 export const PhysicsPlayground = () => {
   const boxRef = useRef(null);
   const canvasRef = useRef(null);
@@ -88,7 +89,8 @@ export const PhysicsPlayground = () => {
           visible: false
         }
       });
-
+    
+    // give the mouse cursor physics   
     let cursor = Bodies.circle(0, 0, 4, {
         restitution: .0,
         render: {
@@ -97,10 +99,8 @@ export const PhysicsPlayground = () => {
             lineWidth: 0,
   
         }})
-
-    const sleep = ms => new Promise(r => setTimeout(r, 19));
     
-    let balls = []; // the balls are just letters
+    let balls = []; // the balls have letter sprites on them
     for (let i = 0; i < title.length; i++) {
         let j = i+1;
             balls.push(

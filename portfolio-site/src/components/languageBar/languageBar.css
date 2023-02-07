@@ -1,19 +1,47 @@
-.progress-bar {
-    width: 500px;
-    height: 20px;
-    background-color: #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-  }
+
+#progressbar{
+  position: relative;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* overflow: hidden; */
+  height: 8px;
   
-  .progress {
-    width: 75%;
-    height: 100%;
-    background-color: blue;
-    animation: progress-animation 2s linear;
-  }
+  left: 50%;
+  top: 50%;
+  width: 200px;
+  background: rgba(159, 159, 159, 0.5);
+  border-radius: 10px;
+  margin: 2rem 0 0 -100px;
+  /* padding: 1px; */
+}
+#loading{
+  transition: all 500ms ease;
+  height: 6px;
   
-  @keyframes progress-animation {
-    from {width: 0;}
-    to {width: 75%;}
+  border-radius: 8px;
+  background: #aaaaaa;
+  position: absolute;
+  margin: 1px;
+  display: inline-block;
+  animation: load 2s ease;
+}
+#load{
+  font-family: 'Quicksand', sans-serif;
+    font-size: 12px;
+    color:rgb(255, 255, 255);
+
+  /* font-family: Arial; */
+
+  text-align: left;
+  margin-top: -1.2rem;
+}
+
+@keyframes load{
+  0%{
+    width: 2%;
   }
+  10%{
+    width: 10%;
+  }
+}

@@ -9,11 +9,18 @@ function Overview() {
   return (
     <span className = "overview">
       <div className = "insideOverview">
-        <div className = "content">
-        <ProfilePicture/>
-        </div>
         
-        <LanguageBar/>
+        <ProfilePicture/>
+        {/* <div>
+          <p>WWU Comp Sci student learning to code. I love to learn new things, then try to make something with the acquired knowledge, and then never finish it.</p>
+        </div> */}
+       
+        
+        <LanguageBar language={"Python"} percentage={90}/>
+        <LanguageBar language={"Java"} percentage={80}/>
+        <LanguageBar language={"javaScript"} percentage={70}/>
+        <LanguageBar language={"SQL"} percentage={65}/>
+        <LanguageBar language={"C"} percentage={60}/>
       
        
         <SocialsBar />

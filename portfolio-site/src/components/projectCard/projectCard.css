@@ -24,7 +24,7 @@
     max-width: 700px;
     gap: 12px;
     margin-top: 1rem;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
   
@@ -39,6 +39,8 @@
 
 #cards:hover > .card::after {
   opacity: 1;
+  
+  
 }
 
 .card {
@@ -50,10 +52,17 @@
   flex-direction: column;
   position: relative;
   width: 200px;  
+  transition: transform 0.2s ease;
+ 
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .card:hover::before {
   opacity: 1;
+  
 }
 
 .card::before,
@@ -114,7 +123,7 @@
   display: flex;
   height: 140px;
   justify-content: center;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .card-image > i {
