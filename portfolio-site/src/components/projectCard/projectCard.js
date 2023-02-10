@@ -25,11 +25,11 @@ export default function ProjectCard() {
   return (
     <div id="cards">
     
-    <Card gifUrl={monki}/>
-    <Card gifUrl={monki}/>
-    <Card gifUrl={monki}/>
-    <Card gifUrl={monki}/>
-    <Card gifUrl={monki}/>
+    <Card gifUrl={monki} title={'Inventory Management System'}/>
+    <Card gifUrl={monki} title= {'Laplacian Filter'}/>
+    <Card gifUrl={monki} title = {'Logar'} subTitle= {'Discord bot'}/>
+    <Card gifUrl={monki} title = {'Pathfinders'} subTitle= {'Visual maze and pathfinding generation'}/>
+    <Card gifUrl={monki} title = {'Stock Trader'} />
     <Card gifUrl={monki}/>
     </div>
     // <>

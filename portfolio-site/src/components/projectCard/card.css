@@ -40,9 +40,6 @@
 
 .card:hover {
   transform: scale(1.05);
-
-  
- 
 }
 
 .card:hover::before {
@@ -82,8 +79,9 @@
   z-index: 1;
 }
 
-.card > .card-content {
-  /* margin-top: 20px;    */
+/* .card > .card-content {
+ 
+  
   background-color: rgb(40, 41, 51);
   border-radius: inherit;
   display: flex;
@@ -93,12 +91,24 @@
   padding: 10px;
   position: absolute;
   z-index: 2;
-}
+} */
 /* -- ↓ ↓ ↓ extra card content styles ↓ ↓ ↓ -- */
-.card {
-    font-family: 'Quicksand', sans-serif;
-    color: #ffffff;
+.card h3{
+  font-family: 'Quicksand', sans-serif;
+
+  font-size: 21px;
+  color:rgb(255, 255, 255);
+  font-weight: 500;
 }
+
+.card h4{
+  font-family: 'Quicksand', sans-serif;
+
+  font-size: 14px;
+  color:rgb(255, 255, 255);
+  font-weight: 500;
+}
+
 .card-image {
   align-items: center;
   display: flex;
