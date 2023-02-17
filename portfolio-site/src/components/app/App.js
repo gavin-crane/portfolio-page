@@ -5,7 +5,7 @@ import ProjectCard from '../../components/projectCard/projectCard'
 import Title from '../../components/title/title';
 import PhysicsPlayground from '../../components/physicsPlayground/physicsPlayground';
 import LanguageBar from '../../components/languageBar/languageBar'
-
+import MotionDiv from '../../components/motionDiv/motionDiv';
 function App() {
   return (
     <div className="App">
@@ -13,6 +13,7 @@ function App() {
      <Overview/>
      <Title/>
      <ProjectCard/>
+     {/* <MotionDiv/> */}
     </div>
   );
 }

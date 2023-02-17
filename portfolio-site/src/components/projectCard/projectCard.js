@@ -5,6 +5,13 @@ import Card from "./card"
 import monki from './tenor_1.gif';
 
 
+let data = `
+  <img src="https://th.bing.com/th/id/OIP.t8QqwxZMUik5MJExJhWItQHaDt?pid=ImgDet&rs=1" alt="An example image" />
+  <h2>THis is a project</h2>
+  <p>This is some filler text hello world what is happening please help me
+  This is some filler text hello world what is happening please help me
+  This is some filler text hello world what is happening please help me
+  This is some filler text hello world what is happening please help me</p>`;
 
 export default function ProjectCard() {
     
@@ -24,13 +31,12 @@ export default function ProjectCard() {
     }, []);
   return (
     <div id="cards">
-    
-    <Card gifUrl={monki} title={'Inventory Management System'}/>
-    <Card gifUrl={monki} title= {'Laplacian Filter'}/>
-    <Card gifUrl={monki} title = {'Logar'} subTitle= {'Discord bot'}/>
-    <Card gifUrl={monki} title = {'Pathfinders'} subTitle= {'Visual maze and pathfinding generation'}/>
-    <Card gifUrl={monki} title = {'Stock Trader'} />
-    <Card gifUrl={monki}/>
+      <Card gifUrl={monki} title={'Inventory Management System'} data={data}/>
+      <Card gifUrl={monki} title= {'Laplacian Filter'} data={data}/>
+      <Card gifUrl={monki} title={'Logar'} subTitle={'Discord bot'} data={data}/>
+      <Card gifUrl={monki} title={'Pathfinders'} subTitle={'Visual maze and pathfinding generation'} data={data}/>
+      <Card gifUrl={monki} title={'Stock Trader'} data={data} />
+      <Card gifUrl={monki}/>
     </div>
     // <>
     //     <div id="cards">
