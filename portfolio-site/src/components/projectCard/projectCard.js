@@ -7,8 +7,32 @@ import monki from './tenor_1.gif';
 
 let data = `
   <img src="https://th.bing.com/th/id/OIP.t8QqwxZMUik5MJExJhWItQHaDt?pid=ImgDet&rs=1" alt="An example image" />
-  <h2>THis is a project</h2>
+  <h1>This is a project</h1>
   <p>This is some filler text hello world what is happening please help me
+  This is some filler text hello world what is happening please help me
+  This is some filler text hello world what is happening please help me
+  This is some filler text hello world what is happening please help me</p>
+  <h2>Heres some more cool info</h2>
+  <p>This is some filler text hello world what is happening please help me
+  This is some filler text hello world what is happening please help me
+  This is some filler text hello world what is happening please help me
+  This is some filler text hello world what is happening please help me
+  This is some filler text hello world what is happening please help me
+  This is some filler text hello world what is happening please help me
+  This is some filler text hello world what is happening please help me</p>
+  <h2>Heres some more cool info</h2>
+  <p>This is some filler text hello world what is happening please help me
+  This is some filler text hello world what is happening please help me
+  This is some filler text hello world what is happening please help me
+  This is some filler text hello world what is happening please help me
+  This is some filler text hello world what is happening please help me
+  This is some filler text hello world what is happening please help me
+  This is some filler text hello world what is happening please help me</p>
+  <h2>Heres some more cool info</h2>
+  <p>This is some filler text hello world what is happening please help me
+  This is some filler text hello world what is happening please help me
+  This is some filler text hello world what is happening please help me
+  This is some filler text hello world what is happening please help me
   This is some filler text hello world what is happening please help me
   This is some filler text hello world what is happening please help me
   This is some filler text hello world what is happening please help me</p>`;

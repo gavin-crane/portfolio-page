@@ -1,11 +1,18 @@
 .box {
-    /* min-width: 200px;
-    min-height: 200px; */
+    min-width: 200px;
+    min-height: 200px;
+    height: 400px;
+    width: 400px;
 
-    max-height: 0;
-    /* max-width: 0; */
+    max-height: 120px;
+    max-width: 120px;
     transition: max-height 2s ease-out;
-    /* transition: max-width 2s ease-out; */
+    transition: max-width 2s ease-out;
+
+    transition-duration: 200ms;
+    transition-delay: 1ms;
+    transition: position 1s, left 1s, top 1s, width 1s, height 1s, max-width 1s, max-height 1s;
+    transition-timing-function: ease;
 
 
     background: rgb(40, 41, 51);
@@ -22,8 +29,6 @@
     box-shadow: 0px 0px 3px 0px rgb(0, 0, 0); 
   }
 
-
-
 .motionContainer {
     z-index: 300;
     position: absolute;
@@ -34,17 +39,23 @@
 
 .boxComplete {
     overflow: hidden;
+    width: auto;
+    top: 0;
+    height: 80vh;
+    max-width: 1000px;
+    max-height: 1000px;
+    overflow-y: auto; 
 
-    max-height: 800px;
-    /* max-width: 800px; */
-    transition: max-height 2s ease-in;
+    /* max-height: 800px;
+    max-width: 800px; */
+    /* transition: max-height 2s ease-in; */
     /* transition: max-width 2s ease-in; */
 
 
     /* position: absolute; */
     line-height: 1.4;
     background-color: rgb(40, 41, 51);
-    padding: 14px 28px;
+    /* padding: 14px 28px; */
     border-radius: 3px;
     /* max-width: 400px;
     min-width: 400px; */
@@ -57,12 +68,12 @@
 
 }
 
-.motionContainer h2 {
+.motionContainer h1, h2 {
     font-family: 'Quicksand', sans-serif;
     color:rgb(255, 255, 255);
 }
 
-.motionContainer span {
+.motionContainer p {
     font-family: 'Quicksand', sans-serif;
     color:rgb(255, 255, 255);
 }
