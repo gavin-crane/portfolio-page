@@ -1,0 +1,44 @@
+.subOrbit  {
+outline: 4px dotted rgba(255, 255, 255, 0.2);
+pointer-events: none;
+z-index: 1000;
+}
+
+.orbit  {
+outline: 4px dotted rgba(255, 255, 255, 0.2);
+pointer-events: none;
+z-index: 1000;
+}
+
+
+
+.sun h4 {
+font-family: Arial, sans-serif;
+color: black;
+/*   z-index: 0; */
+text-align: center;
+color: black;
+}
+
+/* rotate each ring to get orbit effect */
+@keyframes rotate-ring {
+from { transform: translate(-50%, -50%) rotate(0deg); }
+to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* we need to rotate the the moons the opposite direction so the image is always right side up */
+@keyframes rotate-moons { 
+from { transform:  rotate(360deg); }
+to { transform:   rotate(0deg); }
+}
+
+
+@keyframes fadein {
+from {
+    opacity: 0;
+}
+to {
+    opacity: 1;
+}
+}
+

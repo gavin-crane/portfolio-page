@@ -15,7 +15,30 @@
   gap: 12px;  
   max-width: 616px;
   width: calc(100% - 0px); */
+:root {
+  --scale: .5;
+}
+/* .hover-hit-box {
+  width: 200px;
+  height: 200px;
+  outline: dashed .5px white;
+  
 
+ 
+
+}
+
+.hover-hit-box:after {
+
+  content: '';
+  opacity: 0.0;
+
+}
+.hover-hit-box:hover .card{
+  transform: scale(.8);
+  border-radius: 50%;
+  
+} */
 
 #cards:hover > .card::after {
   opacity: 1;
@@ -33,14 +56,22 @@
     position: relative;
     width: 200px;  
     transition: transform 0.2s ease;
+    transition: border-radius 0.2s ease;
 }
 
 .card:hover {
-  transform: scale(1.05);
+  /* transform: scale(1.05); */
+  /* transform: scale(.5); */
+  /* position: static;
+ border-radius: 50%; 
+  transform: scale(var(--scale)); */
+ 
 }
+
 
 .card:hover::before {
   opacity: 1;
+  
   /* background-image: url(./tenor_1.gif); */
   
 }
@@ -164,4 +195,4 @@
 } */
 
 
-/* animated cards */
+/* animated orbits */

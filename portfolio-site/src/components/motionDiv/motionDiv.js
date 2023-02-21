@@ -1,6 +1,6 @@
 import { motion, useCycle } from "framer-motion"
 import './motionDiv.css';
-import { useState, useEffect} from 'react'
+import { useState, useEffect, useLayoutEffect} from 'react'
 import AnimatedText from "./animatedText";
 
   // Placeholder text data, as if from API
@@ -27,6 +27,7 @@ export default function MotionDiv( {data})  {
     const handleAnimationComplete = () => {
         setIsAnimationComplete(true);
       }
+
 
     //   useEffect(() => {
     //     // if (isAnimationComplete) {
@@ -63,32 +64,17 @@ export default function MotionDiv( {data})  {
                     animate = {{
                         scale: [0, 1],
                         rotate: 360,
+                        // borderRadius: ["0%", "100%"]
                     }}
                     transition={{ 
                         type: "spring", 
                         damping: 25,
                         stiffness: 300,
-                        
                     }}
                     onAnimationComplete={handleAnimationComplete}
                 >
-                
-                   
-                    {/* <div dangerouslySetInnerHTML={{ __html: data }}></div> */}
-                    <motion.div
-                        className="animatedText"
-                        initial="hidden"
-                        // animate="visible"
-                        animate="visible"
-                        variants={container}
-                        >
-                        <div className="container">
-                            {placeholderText.map((item, index) => {
-                            return <AnimatedText {...item} key={index} />;
-                            })}
-                        </div>
-
-                    </motion.div>
+                    <div className = "scaryHTML"dangerouslySetInnerHTML={{ __html: data }}></div>
+                    
                 </motion.div>
             </div>  
         </div>
