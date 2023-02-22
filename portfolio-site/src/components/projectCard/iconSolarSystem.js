@@ -15,9 +15,7 @@ export default function IconSolarSystem({icons}) {
         const baseOrbitSpeed = 10;
         const baseDistBetweenOrbits = 200;
         const baseSubOrbitalSize = 30;
-        
-
-       
+      
         // will contains all the moons and their orbits
 
         let container = document.querySelector('.system-container');

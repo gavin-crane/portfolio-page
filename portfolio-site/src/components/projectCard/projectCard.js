@@ -59,7 +59,7 @@ export default function ProjectCard() {
       <Card gifUrl={monki} title= {'Laplacian Filter'} data={data}/>
       <Card gifUrl={monki} title={'Logar'} subTitle={'Discord bot'} data={data}/>
       <Card gifUrl={monki} title={'Pathfinders'} subTitle={'Visual maze and pathfinding generation'} data={data}/>
-      <Card gifUrl={monki} title={'Stock Trader'} data={data} />
+      <Card gifUrl={monki} title={'Dungeons and Dragons'} data={data} />
       <Card gifUrl={monki}/>
     </div>
     // <>

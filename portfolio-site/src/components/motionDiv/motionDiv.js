@@ -1,5 +1,6 @@
 import { motion, useCycle } from "framer-motion"
-import './motionDiv.css';
+// import './motionDiv.css';
+import './motionModal.css';
 import { useState, useEffect, useLayoutEffect} from 'react'
 import AnimatedText from "./animatedText";
 
@@ -42,12 +43,12 @@ export default function MotionDiv( {data})  {
     return (
         <div className="motionContainer">
             <div className="motionWrapper">
-                {isAnimationComplete &&( <motion.button className = 'closeModalButton'
+                {/* {isAnimationComplete &&( <motion.button className = 'closeModalButton'
                                                 whileHover={{ scale: 1.1 }}
                                                 whileTap={{ scale: 0.9 }}
                                             >
                                                 Exit
-                                            </motion.button>)}
+                                            </motion.button>)} */}
                 {/* <motion.button className = 'closeModalButton'
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}

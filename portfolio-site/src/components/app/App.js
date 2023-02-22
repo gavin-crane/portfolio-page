@@ -13,10 +13,11 @@ function App() {
     <div className="App">
       {/* <PhysicsPlayground/> */}
     
-     <Title/>
-     <Overview/>
-     <ProjectCard/>
-
+      <Title/>
+      <div className="App-contents">
+      {/* <Overview/> */}
+      <ProjectCard/>
+    </div>
     </div>
   );
 }

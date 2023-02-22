@@ -6,6 +6,13 @@
 
 }
 
+.App-contents {
+  border: 1px dashed rgb(216, 17, 17);
+  width: clamp(300px, 100vw, 1200px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

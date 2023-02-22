@@ -51,12 +51,13 @@
     border-radius: 5px;
     cursor: pointer;
     display: flex;
-    height: 200px;
+    height: 330px;
     flex-direction: column;
     position: relative;
-    width: 200px;  
+    width: 330px;  
     transition: transform 0.2s ease;
     transition: border-radius 0.2s ease;
+    margin: 5px;
 }
 
 .card:hover {
@@ -138,7 +139,7 @@
 
 /* modal stuff */
 
-.btn-modal {
+/* .btn-modal {
   padding: 10px 20px;
   display: block;
   margin: 100px auto 0;
@@ -159,7 +160,7 @@
 
 .overlay {
   background: rgba(66, 66, 66, 0.8);
-}
+} */
 /* .modal-content {
   
   position: absolute;
