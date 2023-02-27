@@ -37,6 +37,24 @@ let data = `
   This is some filler text hello world what is happening please help me
   This is some filler text hello world what is happening please help me</p>`;
 
+  let tileSize = 100;
+
+  let icons = [
+    { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png", size: 25,
+        subMoons: [
+        {url: "https://cdn.freebiesupply.com/logos/large/2x/css3-logo-png-transparent.png", size: 25},
+        {url: "https://images.vexels.com/media/users/3/166383/isolated/preview/6024bc5746d7436c727825dc4fc23c22-html-programming-language-icon-by-vexels.png", size: 25}
+        ]
+    },
+    { url: "https://th.bing.com/th/id/R.f7337d339216d05c1551688efb13a830?rik=m28qY9WE3BaKXQ&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fnodejs-png-nodejs-icon-png-50-px-1600.png&ehk=XR9ktXGvw5svYVTEqemL7wSEUZL%2bihqTpYBLPSQn8GQ%3d&risl=&pid=ImgRaw&r=0", size: 25,
+        subMoons: [
+        {url: "https://pngimage.net/wp-content/uploads/2018/05/express-js-png-5.png", size: 25},
+        {url: "https://icon-library.com/images/postgres-icon/postgres-icon-25.jpg", size: 25}
+        ]
+    },
+    
+    ]
+
 export default function ProjectCard() {
     
 
@@ -55,12 +73,12 @@ export default function ProjectCard() {
     }, []);
   return (
     <div id="cards">
-      <Card gifUrl={monki} title={'Inventory Management System'} data={data}/>
-      <Card gifUrl={monki} title= {'Laplacian Filter'} data={data}/>
-      <Card gifUrl={monki} title={'Logar'} subTitle={'Discord bot'} data={data}/>
-      <Card gifUrl={monki} title={'Pathfinders'} subTitle={'Visual maze and pathfinding generation'} data={data}/>
-      <Card gifUrl={monki} title={'Dungeons and Dragons'} data={data} />
-      <Card gifUrl={monki}/>
+      <Card gifUrl={monki} title={'Inventory Management System'} data={data} iconSet={icons} identifier={1}/>
+      <Card gifUrl={monki} title= {'Laplacian Filter'} data={data} iconSet={icons} identifier={2}/>
+      <Card gifUrl={monki} title={'Logar'} subTitle={'Discord bot'} data={data}  iconSet={icons} identifier={3}/>
+      <Card gifUrl={monki} title={'Pathfinders'} subTitle={'Visual maze and pathfinding generation'} data={data} iconSet={icons} identifier={4}/>
+      <Card gifUrl={monki} title={'Dungeons and Dragons'} data={data} iconSet={icons} identifier={5}/>
+      <Card gifUrl={monki} iconSet={icons} identifier={6}/>
     </div>
     // <>
     //     <div id="cards">

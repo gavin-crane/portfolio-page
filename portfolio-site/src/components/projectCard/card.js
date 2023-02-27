@@ -9,38 +9,27 @@ import IconSolarSystem from './iconSolarSystem';
 
 let expandedContent = '<div><h2>Hello Modal</h2></div>';
 
-let tileSize = 100;
 
-let iconSet = [
-  { url: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png", size: 40,
-      subMoons: [
-      {url: "https://cdn.freebiesupply.com/logos/large/2x/css3-logo-png-transparent.png", size: 40},
-      {url: "https://images.vexels.com/media/users/3/166383/isolated/preview/6024bc5746d7436c727825dc4fc23c22-html-programming-language-icon-by-vexels.png", size: 40}
-      ]
-  },
-  { url: "https://th.bing.com/th/id/R.f7337d339216d05c1551688efb13a830?rik=m28qY9WE3BaKXQ&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fnodejs-png-nodejs-icon-png-50-px-1600.png&ehk=XR9ktXGvw5svYVTEqemL7wSEUZL%2bihqTpYBLPSQn8GQ%3d&risl=&pid=ImgRaw&r=0", size: 40,
-      subMoons: [
-      {url: "https://pngimage.net/wp-content/uploads/2018/05/express-js-png-5.png", size: 40},
-      {url: "https://icon-library.com/images/postgres-icon/postgres-icon-25.jpg", size: 40}
-      ]
-  },
-  
-  ]
 
-export default function Card({gifUrl, title, subTitle, data, tileSize}) {
+export default function Card({gifUrl, title, subTitle, data, iconSet, identifier}) {
+
+    console.log("icons in card", iconSet);
     const [isHovered, setIsHovered] = useState(false);
     const [isClicked, setIsClicked] = useState(false);
     const [isIconSolarSystemMounted, mountIconSolarSystem] = useState(false);
 
     const handleClick = (event) => { 
       setIsClicked(!isClicked);
-      setIsHovered(!isHovered);
+      setIsHovered(false);
     }
 
     const cardStyles = {
       position: 'relative',
-      backgroundImage: isHovered ? `url(${gifUrl})` : "none",
+      backgroundImage: "none",
+
+      // backgroundImage: isHovered ? `url(${gifUrl})` : "none",
       zIndex: 2,
+      
       backgroundSize: "cover",
       backgroundPosition: "center",
     }
@@ -101,12 +90,12 @@ export default function Card({gifUrl, title, subTitle, data, tileSize}) {
       return (<div
         className="card"
         onMouseEnter={() => setIsHovered(true)}
-        // onMouseLeave={() => setIsHovered(false)}
+        onMouseLeave={() => setIsHovered(false)}
         // onMouseOut={() => setIsHovered(false)}
         onClick={(event) => handleClick(event)}
         style={cardStyles}
       >
-        {(isHovered && !isClicked) &&  <IconSolarSystem icons = {iconSet}/>}
+        {<div className='card-solar-system'> <IconSolarSystem icons={iconSet} identifier={identifier}/> </div>}
         <div className="card-content" style={cardContentStyles}>
           <div className="card-image">
             <i className="fa-duotone fa-apartment"></i>

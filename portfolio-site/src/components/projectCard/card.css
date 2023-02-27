@@ -46,7 +46,7 @@
 }
 
 .card {
-    
+   
     background-color: rgba(255, 255, 255, 0.1); 
     border-radius: 5px;
     cursor: pointer;
@@ -60,22 +60,42 @@
     margin: 5px;
 }
 
-.card:hover {
+.card-solar-system {
+  opacity: 0;
+}
+
+.card:hover .card-solar-system{
+  opacity: 1;
+  /* opacity: 0; */
   /* transform: scale(1.05); */
   /* transform: scale(.5); */
   /* position: static;
  border-radius: 50%; 
   transform: scale(var(--scale)); */
- 
 }
 
 
+
+
+
+.card:hover {
+  z-index: 20;
+  transform: scale(1.04);
+  transition: transform 0.2s ease;
+ 
+  /* opacity: .4; */
+
+  /* opacity: .2; */
+}
+
+
+/* 
 .card:hover::before {
   opacity: 1;
   
-  /* background-image: url(./tenor_1.gif); */
   
-}
+  
+} */
 
 .card::before,
 .card::after {
@@ -102,8 +122,8 @@
 .card::after {  
   background: radial-gradient(
     600px circle at var(--mouse-x) var(--mouse-y), 
-    rgba(255, 255, 255, 0.4),
-    transparent 40%
+    rgba(255, 255, 255, 0.1),
+    transparent 30%
   );
   z-index: 1;
 }

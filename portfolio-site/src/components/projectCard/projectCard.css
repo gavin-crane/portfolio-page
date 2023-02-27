@@ -9,3 +9,7 @@
   /* justify-content: space-between;
   justify-content: space-evenly; */
 }
+
+#cards:hover > .card::after {
+  opacity: 1;
+}
