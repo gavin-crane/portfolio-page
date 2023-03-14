@@ -7,17 +7,20 @@ import PhysicsPlayground from '../../components/physicsPlayground/physicsPlaygro
 import LanguageBar from '../../components/languageBar/languageBar'
 import MotionDiv from '../../components/motionDiv/motionDiv';
 import IconSolarSystem from '../../components/projectCard/iconSolarSystem';
+import InfoBlock from '../infoBlock/infoBlock';
 
 function App() {
   return (
     <div className="App">
       {/* <PhysicsPlayground/> */}
+
     
       <Title/>
-      <div className="App-contents">
-      {/* <Overview/> */}
-      <ProjectCard/>
-    </div>
+        <div className="App-contents">
+        {/* <Overview/> */}
+        <InfoBlock/>
+        <ProjectCard/>
+        </div>
     </div>
   );
 }

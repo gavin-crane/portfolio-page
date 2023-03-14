@@ -24,6 +24,12 @@
   }
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  font-family: 'Quicksand', sans-serif;
+  color:rgb(255, 255, 255);
+  font-weight: 100;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -47,3 +53,5 @@
     transform: rotate(360deg);
   }
 }
+
+

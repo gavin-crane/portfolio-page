@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import './projectCard.css';
 import Card from "./card"
+import InfoBlock from '../infoBlock/infoBlock';
 
 import monki from './tenor_1.gif';
 
@@ -72,14 +73,17 @@ export default function ProjectCard() {
         }
     }, []);
   return (
+    <>
     <div id="cards">
+      
       <Card gifUrl={monki} title={'Inventory Management System'} data={data} iconSet={icons} identifier={1}/>
       <Card gifUrl={monki} title= {'Laplacian Filter'} data={data} iconSet={icons} identifier={2}/>
       <Card gifUrl={monki} title={'Logar'} subTitle={'Discord bot'} data={data}  iconSet={icons} identifier={3}/>
       <Card gifUrl={monki} title={'Pathfinders'} subTitle={'Visual maze and pathfinding generation'} data={data} iconSet={icons} identifier={4}/>
       <Card gifUrl={monki} title={'Dungeons and Dragons'} data={data} iconSet={icons} identifier={5}/>
-      <Card gifUrl={monki} iconSet={icons} identifier={6}/>
+      <Card gifUrl={monki} title={'Ravenous'} subTitle={"Yelp-like clone"} data={data} iconSet={icons} identifier={6}/>
     </div>
+    </>
     // <>
     //     <div id="cards">
     //     <div class="card">

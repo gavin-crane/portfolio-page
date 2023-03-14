@@ -35,7 +35,7 @@ export default function Card({gifUrl, title, subTitle, data, iconSet, identifier
     }
 
     const cardContentStyles = {
-      backgroundColor: isHovered ? "transparent" :'rgb(40, 41, 51)',
+      backgroundColor: isHovered ? "transparent" :'rgb(10, 18, 30)',
       borderRadius: isHovered ? '50%' :'inherit',
       display: 'flex',
       flexDirection: 'column',

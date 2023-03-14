@@ -16,7 +16,8 @@
     transition-timing-function: ease;
 
 
-    background: rgb(40, 41, 51);
+    /* background: rgb(40, 41, 51); */
+    background: #1B2735;
     position: relative;
     /* top: 50%;
     left: 50% ;
@@ -59,7 +60,8 @@
 
     /* position: absolute; */
     line-height: 1.4;
-    background-color: rgb(40, 41, 51);
+    /* background-color: rgb(40, 41, 51); */
+    background-color: rgb(10, 18, 30);
     /* padding: 14px 28px; */
  
     /* max-width: 400px;

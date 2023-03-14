@@ -1,6 +1,6 @@
 // MatterStepOne.js
 import React, { useEffect, useRef } from 'react';
-import Matter from 'matter-js';
+import Matter, { Body } from 'matter-js';
 import "./physicsPlayground.css";
 
 const title = "Welcome to my Portfolio";
@@ -90,6 +90,31 @@ export const PhysicsPlayground = () => {
         }
       });
     
+    // create the meteor object
+    const imgPath = 'https://cdn2.iconfinder.com/data/icons/space-cartoon/512/sim4313-512.png';
+    const meteorImg = new Image();
+    meteorImg.src = imgPath;
+
+
+    const meteor = Bodies.rectangle(1100, 60, 40, 40, {
+      isStatic: false,
+      mass: 150,
+      render: {
+        sprite: {
+          texture: meteorImg.src,
+          xScale: 0.2,
+          yScale: 0.2
+        }
+      }
+  
+    })
+
+    setTimeout(() => {
+      Body.setVelocity(meteor, { x: -10, y: .6 });
+    }, 5000); // delay the launch by 15000 milliseconds (15 seconds)
+   
+
+    
     // give the mouse cursor physics   
     let cursor = Bodies.circle(0, 0, 4, {
         restitution: .0,
@@ -136,7 +161,7 @@ export const PhysicsPlayground = () => {
     }
 
     // World.add(engine.world, [floor, reactionText, balls[5]]);
-    World.add(engine.world, [floor, ceiling, leftWall, rightWall])
+    World.add(engine.world, [floor, ceiling, leftWall, rightWall, meteor])
     for (let i = 0; i < balls.length; i++) {
         World.add(engine.world, balls[i]);
       }
@@ -154,7 +179,8 @@ export const PhysicsPlayground = () => {
     });
     World.add(engine.world, [mouseConstraint, cursor]);
 
-    Engine.run(engine);
+    // Engine.run(engine);
+    Matter.Runner.run(engine);
     Render.run(render);
   },[]);
 

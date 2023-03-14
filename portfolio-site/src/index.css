@@ -5,6 +5,15 @@
 
 
 body {
-  background-color: rgb(32, 33, 42);
+  /* background-color: rgb(32, 33, 42); */
+  background: radial-gradient(ellipse at bottom, #293746 0%, #090A0F 100%);
+  
   margin: 0;
 }
+
+/* html {
+  height: 100%;
+  background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+  overflow: hidden;
+} */
+

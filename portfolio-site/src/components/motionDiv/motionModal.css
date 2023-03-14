@@ -16,7 +16,8 @@
     transition-timing-function: ease;
 
 
-    background: rgb(40, 41, 51);
+    /* background: rgb(40, 41, 51); */
+    background: rgb(10, 18, 30);
     position: relative;
     /* top: 50%;
     left: 50% ;
@@ -47,7 +48,7 @@
     right: 0; */
     /* height: 80vh; */
     /* max-width: 1000px; */
-    max-width: clamp(80vh, 80vw, 2000px);
+    max-width: clamp(80vw, 80vw, 2000px);
     max-height: clamp(80vh, 70vh, 2000px);
 
     /* max-height: 1000px; */
@@ -62,7 +63,7 @@
 
     /* position: absolute; */
     line-height: 1.4;
-    background-color: rgb(40, 41, 51);
+    background: rgb(10, 18, 30);
     /* padding: 14px 28px; */
  
     /* max-width: 400px;
